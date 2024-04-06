@@ -1,8 +1,11 @@
-package com.sms.entity;
+package com.moviewebapp.movieapp.entity;
+
 
 import org.springframework.web.multipart.MultipartFile;
 
-import jakarta.validation.constraints.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+
 
 public class MovieDto {
     @NotEmpty(message = "The name is required")

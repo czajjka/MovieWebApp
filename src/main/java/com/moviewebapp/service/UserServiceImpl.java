@@ -1,8 +1,8 @@
-package com.example.moviewebapp.service;
+package com.moviewebapp.service;
 
 
-import com.example.moviewebapp.model.UserDtls;
-import com.example.moviewebapp.repository.UserRepository;
+import com.moviewebapp.model.UserDtls;
+import com.moviewebapp.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

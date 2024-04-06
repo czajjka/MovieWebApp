@@ -1,4 +1,4 @@
-package com.example.moviewebapp.model;
+package com.moviewebapp.model;
 
 
 import lombok.Data;
@@ -23,7 +23,7 @@ public class UserDtls {
 
     private String address;
 
-    private String qualification;
+    private String number;
 
     private String password;
 

@@ -1,7 +1,7 @@
-package com.example.moviewebapp.config;
+package com.moviewebapp.config;
 
-import com.example.moviewebapp.model.UserDtls;
-import com.example.moviewebapp.repository.UserRepository;
+import com.moviewebapp.model.UserDtls;
+import com.moviewebapp.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,6 +1,5 @@
-package com.example.moviewebapp.config;
+package com.moviewebapp.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -44,6 +43,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/user/**").hasRole("USER")
                 .antMatchers("/**").permitAll().and().formLogin().loginPage("/signin").loginProcessingUrl("/login")
-                .defaultSuccessUrl("/user").and().csrf().disable();
+                .defaultSuccessUrl("/movies").and().csrf().disable();
     }
 }

@@ -1,6 +1,6 @@
-package com.example.moviewebapp.config;
+package com.moviewebapp.config;
 
-import com.example.moviewebapp.model.UserDtls;
+import com.moviewebapp.model.UserDtls;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

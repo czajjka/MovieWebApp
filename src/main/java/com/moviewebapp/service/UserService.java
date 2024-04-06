@@ -1,7 +1,7 @@
-package com.example.moviewebapp.service;
+package com.moviewebapp.service;
 
 
-import com.example.moviewebapp.model.UserDtls;
+import com.moviewebapp.model.UserDtls;
 
 public interface UserService {
 

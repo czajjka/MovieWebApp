@@ -1,8 +1,9 @@
-package com.sms.controller;
+package com.moviewebapp.movieapp.controller;
 
-import com.sms.entity.Movie;
-import com.sms.entity.MovieDto;
-import com.sms.repositoryservice.MovieRepository;
+
+import com.moviewebapp.movieapp.entity.Movie;
+import com.moviewebapp.movieapp.entity.MovieDto;
+import com.moviewebapp.movieapp.repositoryservice.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
@@ -10,16 +11,17 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
-
-
-import jakarta.validation.Valid;
 import org.springframework.web.multipart.MultipartFile;
 
+
+import javax.validation.Valid;
 import java.io.InputStream;
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.Date;
 import java.util.List;
-
 
 @Controller
 @RequestMapping("/movies")

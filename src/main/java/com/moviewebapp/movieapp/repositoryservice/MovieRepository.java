@@ -1,6 +1,7 @@
-package com.sms.repositoryservice;
+package com.moviewebapp.movieapp.repositoryservice;
 
-import com.sms.entity.Movie;
+
+import com.moviewebapp.movieapp.entity.Movie;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

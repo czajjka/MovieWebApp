@@ -1,8 +1,8 @@
-package com.example.moviewebapp.controller;
+package com.moviewebapp.controller;
 
 
-import com.example.moviewebapp.model.UserDtls;
-import com.example.moviewebapp.service.UserService;
+import com.moviewebapp.model.UserDtls;
+import com.moviewebapp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
