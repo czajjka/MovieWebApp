@@ -25,6 +25,10 @@
 
 • Thymeleaf
 
+
+## Screenshots
+
+
 <img width="942" alt="image" src="https://github.com/czajjka/MovieWebApp/assets/131516264/cfc4c947-eb1d-404f-9030-dff72e857a87">
 
 
