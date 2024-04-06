@@ -21,7 +21,7 @@
 
 • Spring Security
 
-• MySql
+• MySQL
 
 • Thymeleaf
 
