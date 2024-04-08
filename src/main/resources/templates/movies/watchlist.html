@@ -23,7 +23,7 @@
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="btn btn-primary" type="button" href="/movies/watchlist">Watchlist</a>
+                <a class="btn btn-primary" type="button" href="/watchlist">Watchlist</a>
             </li>
             <li class="nav-item">
                 <a class="btn btn-primary" type="button" href="/movies">Home</a>
@@ -41,28 +41,26 @@
     </div>
 </nav>
 <div class="container">
-    <h1 class="text-center my-4">Movie List</h1>
-
-    <a class="btn btn-primary" href="/movies/create">Create New Movie</a>
+    <h1 class="text-center my-4">Watchlist</h1>
 
     <table class="table">
         <thead>
         <tr>
 
-<!--            <th>ID</th>-->
+            <!--            <th>ID</th>-->
             <th>Movie Poster</th>
             <th>Title</th>
             <th>Director</th>
             <th>Category</th>
             <th>Rate</th>
-<!--            <th>Created At</th>-->
+            <!--            <th>Created At</th>-->
             <th>Action</th>
 
         </tr>
         </thead>
         <tbody>
         <tr th:each="movie : ${movies}">
-<!--            <td th:text="${movie.id}"></td>-->
+            <!--            <td th:text="${movie.id}"></td>-->
             <td>
                 <img th:src="@{'/images/' + ${movie.imageFileName}}"
                      alt="..." width="100">
@@ -71,14 +69,11 @@
             <td th:text="${movie.director}"></td>
             <td th:text="${movie.category}"></td>
             <td th:text="${movie.rate}"></td>
-<!--            <td th:text="${movie.createdAt}"></td>-->
+            <!--            <td th:text="${movie.createdAt}"></td>-->
 
             <td style="white-space:nowrap">
                 <a class="btn btn-primary btn-sm"
-                   th:href="@{/movies/watchlist/{id}(id=${movie.id})}">Add To Watchlist</a>
-
-                <!--                   th:href="@{/movies/watchlist(id=${movie.id})}">Add To Watchlist</a>                   th:href="@{/movies/watchlist(id=${movie.id})}">Add To Watchlist</a>-->
-
+                   th:href="@{/movies/watchlist(id=${movie.id})}">Add To Watchlist</a>
                 <a class="btn btn-primary btn-sm"
                    th:href="@{/movies/edit(id=${movie.id})}">Edit</a>
                 <a class="btn btn-danger btn-sm"

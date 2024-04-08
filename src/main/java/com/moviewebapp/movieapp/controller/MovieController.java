@@ -3,7 +3,9 @@ package com.moviewebapp.movieapp.controller;
 
 import com.moviewebapp.movieapp.entity.Movie;
 import com.moviewebapp.movieapp.entity.MovieDto;
+import com.moviewebapp.movieapp.entity.Watchlist;
 import com.moviewebapp.movieapp.repositoryservice.MovieRepository;
+import com.moviewebapp.movieapp.repositoryservice.WatchlistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
@@ -121,9 +123,9 @@ public class MovieController {
 
     @PostMapping("/edit")
     public String updateMovie(Model model,
-                                @RequestParam int id,
-                                @Valid @ModelAttribute MovieDto movieDto,
-                                BindingResult result) {
+                              @RequestParam int id,
+                              @Valid @ModelAttribute MovieDto movieDto,
+                              BindingResult result) {
 
         try {
             Movie movie = repository.findById(id).get();
@@ -198,6 +200,13 @@ public class MovieController {
         return "redirect:/movies";
 
     }
+
+    @GetMapping("/watchlist")
+    public String watchlist() {
+
+        return "movies/watchlist";
+    }
+
 
 
 
